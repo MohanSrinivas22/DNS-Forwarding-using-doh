@@ -1,0 +1,6 @@
+1. Install and import all the necessary python modules:
+    sudo apt install python3-scapy
+    sudo apt install python3-dnslib
+    sudo apt install python3-dnspython
+2. Run the command : "sudo ./dns_forwarder.py --doh_server 1.1.1.1 -l ./queries.log -f ./deny_list.txt"
+3. Open a new terminal and run the dig command: "dig @127.0.0.1 -t AAAA www.google.com"
